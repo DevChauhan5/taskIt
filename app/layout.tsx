@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Mukta } from "next/font/google";
+import { Acme } from "next/font/google";
 import "./globals.css";
 
-const mukta = Mukta({ 
+const acme = Acme({ 
   subsets: ["latin"],
-  weight: ['400', '500', '600', '700'], 
+  weight: ['400'], 
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mukta.className}>{children}</body>
+      <body className={acme.className}>{children}</body>
     </html>
   );
 }
