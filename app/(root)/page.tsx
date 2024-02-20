@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from './_components/Hero'
 
 const Home = () => {
   return (
-    <div className='text-2xl font-bold'>Home</div>
+    <main>
+      <Hero />
+    </main>
   )
 }
 
